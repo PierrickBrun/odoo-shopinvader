@@ -16,6 +16,7 @@ class AbstractSaleService(AbstractComponent):
             selected_carrier = {
                 "id": carrier.id,
                 "name": carrier.name,
+                "code": carrier.code,
                 "description": carrier.description,
             }
         res.update(
@@ -56,6 +57,7 @@ class AbstractSaleService(AbstractComponent):
         return {
             "id": carrier.id,
             "name": carrier.name,
+            "code": carrier.code,
             "description": carrier.description,
             "price": carrier.price,
         }
